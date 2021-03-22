@@ -1,4 +1,10 @@
 #This is a python!!
+
+f = open("/boot/config.txt", 'r')
+a=f.readline()
+a2 = a.replace("\n", "")
+print(a2)
+
 ethIndex = 0
 def change_static_ip(ip_address):
     ethIndex = 0
@@ -25,4 +31,4 @@ def change_static_ip(ip_address):
 
 
         
-change_static_ip('192.168.0.103')
+change_static_ip(a2)
